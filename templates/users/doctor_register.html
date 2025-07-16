@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Prescription</title>
+</head>
+<body>
+    <h2>Add Prescription</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Prescription</button>
+    </form>
+</body>
+</html>

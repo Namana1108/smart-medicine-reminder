@@ -1,0 +1,1 @@
+<!DOCTYPE html> <html> <head> <title>Add Prescription</title> </head> <body> <h2>Add Prescription</h2> <form method="POST"> {% csrf_token %} {{ form.as_p }} <label>Phone number (with country code):</label> <input type="text" name="phone" placeholder="+918088586857" required> <button type="submit" name="sms">Save Prescription & Send SMS</button> </form> </body> </html>
